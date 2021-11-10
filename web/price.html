@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Show price page</title>
+</head>
+<body>
+<h1>Stock viewer</h1>
+<a href="home.html">Home</a>
+<h2>Show price</h2>
+<div>
+<label for="symbol">Enter symbol: </label>
+</div>
+<div>
+<input type="text" id="symbol">
+</div>
+<div>
+<label for="day">Enter amount of days to show</label>
+</div>
+<div>
+<input type="text" id="day">
+</div>
+<div>
+<input type="submit" value="Search" id="search">
+</div>
+<div id="result">
+<script>
+const search = document.getElementById("search");
+function searchAction(){
+result.innerHTML = "<h2>Result</h2><table><tr><th>Date</th><th>Open</th><th>High</th><th>Low</th><th>Close</th><th>Volume</th></tr></table>";
+}
+search.addEventListener("click", searchAction);
+</script>
+</body>
+</html>

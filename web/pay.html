@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>pricing page</title>
+</head>
+<body>
+<h1>Stock viewer</h1>
+<a href="home.html">Home</a>></a ref="profile.html">Profile</a>
+<h2>Pricing</h2>
+<div>
+<button>Pay 5$ for 1 month</button>
+</div>
+<div>
+<button>Pay 14$ for 3month</button>
+</div>
+<div>
+<button>Pay 26$ for 6 month</button>
+</div>
+<div>
+<button>Pay 50$ for 12 month</button>
+</div>
+<div>
+<label for="email">Email for your paypal: </label>
+</div>
+<div>
+<input type="text" id="email">
+</div>
+<div>
+<input type="submit" value="Submit" id="submit">
+</div>
+<script>
+const submit = document.getElementById("submit");
+function submitAction(){
+alert("Email have been sent.");
+}
+submit.addEventListener("click", submitAction);
+</script>
+</body>
+</html>

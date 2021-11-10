@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Login page</title>
+</head>
+<body>
+<h1>Stock viewer</h1>
+<h2>Login</h2>
+<form>
+<div>
+<label for="email">Email: </label>
+</div>
+<div>
+<input type="text" id="email">
+</div>
+<div>
+<label for="password">Password: </label>
+</div>
+<div>
+<input type="password" id="password">
+</div>
+</form>
+<div>
+<input type="submit" value="Login" id="login">
+</div>
+<a href="register.html">Register</a>
+<script>
+const login = document.getElementById("login");
+function loginAction(){
+window.location.href = "home.html";
+}
+login.addEventListener("click", loginAction);
+</script>
+</body>
+</html>

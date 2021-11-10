@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>Symbol information page</title>
+</head>
+<body>
+<h1>Stock viewer</h1>
+<a href="home.html">Home</a>
+<h2>Symbol information</h2>
+<div>
+<label for="symbol">Enter symbol: </label>
+</div>
+<div>
+<input type="text" id="symbol">
+</div>
+<div>
+<input type="submit" value="Search" id="submit">
+</div>
+<div id="result">
+<script>
+const search = document.getElementById("submit");
+const result = document.getElementById("result");
+function searchAction(){
+result.innerHTML = "<h2>Result</h2><ul><li>symbol:<li>sector:<li>city:<li>phone:<li>country:<li>companyOfficers:<li>website:</ul>";
+}
+search.addEventListener("click", searchAction);
+</script>
+</body>
+</html>
