@@ -3,7 +3,8 @@
 <title>Login page</title>
 </head>
 <body>
-<h1>Stock viewer</h1>
+<div id="main">
+<h1>{{ message }}</h1>
 <h2>Login</h2>
 <form>
 <div>
@@ -23,10 +24,13 @@
 <input type="submit" value="Login" id="login">
 </div>
 <a href="register.html">Register</a>
+</div>
+<script src="https://unpkg.com/vue@next"></script>
+<script src="name.js"></script>
 <script>
 const login = document.getElementById("login");
 function loginAction(){
-alert("Welcome to stock viewer");
+alert("Welcome to {{ message }}");
 window.location.href = "home.html";
 }
 login.addEventListener("click", loginAction);

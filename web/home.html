@@ -3,7 +3,8 @@
 <title>Home page</title>
 </head>
 <body>
-<h1>Stock viewer</h1>
+<div id="main">
+<h1>{{ message }}</h1>
 <ul>
 <li><a href="home.html".Home</a>
 <li><a href="price.html">Show price</a>
@@ -11,6 +12,9 @@
 <li><a href="profile.html">User profile</a>
 <li><a href="index.html">Logout</a>
 </ul>
-Welcome to Stock viewer website.
+Welcome to {{ message }} website.
+</div>
+<script src="https://unpkg.com/vue@next"></script>
+<script src="name.js"></script>
 </body>
 </html>

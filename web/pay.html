@@ -3,7 +3,8 @@
 <title>pricing page</title>
 </head>
 <body>
-<h1>Stock viewer</h1>
+<div id="main">
+<h1>{{ message }}</h1>
 <a href="home.html">Home</a>></a ref="profile.html">Profile</a>
 <h2>Pricing</h2>
 <div>
@@ -27,6 +28,9 @@
 <div>
 <input type="submit" value="Submit" id="submit">
 </div>
+</div>
+<script src="https://unpkg.com/vue@next"></script>
+<script src="name.js"></script>
 <script>
 const submit = document.getElementById("submit");
 function submitAction(){

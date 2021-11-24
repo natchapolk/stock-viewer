@@ -3,7 +3,8 @@
 <title>Register page</title>
 </head>
 <body>
-<h1>Stock viewer</h1>
+<div id="main">
+<h1>{{ message }}</h1>
 <h2>Register form</h2>
 <form>
 <div>
@@ -34,6 +35,9 @@
 <div>
 <input type="submit" value="Register" id="submit">
 </div>
+</div>
+<script src="https://unpkg.com/vue@next"></script>
+<script src="name.js"></script>
 <script>
 const submit = document.getElementById("submit");
 function submitAction(){
